@@ -1,0 +1,18 @@
+2014-01-12 20:16:00 overwrite stylesheets/screen.css 
+2014-01-12 20:18:16 overwrite stylesheets/screen.css 
+2014-01-12 20:18:40 overwrite stylesheets/screen.css 
+2014-01-12 20:19:10 overwrite stylesheets/screen.css 
+2014-01-12 20:19:47 identical stylesheets/screen.css 
+2014-01-12 20:20:09 overwrite stylesheets/screen.css 
+2014-01-12 20:20:27 overwrite stylesheets/screen.css 
+2014-01-12 20:24:48     error sass/screen.scss (Line 14: Invalid CSS after "$": expected identifier, was "*{")
+2014-01-12 20:24:48 overwrite stylesheets/screen.css 
+2014-01-12 20:26:44     error sass/screen.scss (Line 14: Invalid CSS after "$": expected identifier, was "*{")
+2014-01-12 20:26:44 identical stylesheets/screen.css 
+2014-01-12 20:30:54 overwrite stylesheets/screen.css 
+2014-01-12 20:31:52 overwrite stylesheets/screen.css 
+2014-01-12 20:32:42     error sass/screen.scss (Line 19: Undefined variable: "$img0".)
+2014-01-12 20:32:42 overwrite stylesheets/screen.css 
+2014-01-12 20:33:28     error sass/screen.scss (Line 19: Undefined variable: "$img0".)
+2014-01-12 20:33:28 overwrite stylesheets/screen.css 
+2014-01-12 20:33:50 overwrite stylesheets/screen.css 

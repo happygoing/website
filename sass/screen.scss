@@ -1,0 +1,196 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v3/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+$img: "../images/";
+@mixin hideText() {
+	white-space: nowrap;
+	overflow: hidden;
+}
+@mixin link() {
+	@include hideText();
+	padding-left: 37px;
+	display: inline-block;
+	width: 0;
+	height: 37px;
+	background: url(#{$img}buttons.png) left top no-repeat;
+	&:hover{
+		background-position: left bottom;
+	}
+}
+
+
+*{
+	font-family: 'Droid Serif', \5FAE\8EDF\6B63\9ED1\9AD4, Arial;
+}
+body {
+	background-color: #f6f6f6;
+}
+.header {
+	background-color: rgba(0,0,0,0.8);
+	height: 74px;
+	section {
+		background-color: #000;
+		width: 914px;
+		margin: 0 auto;
+		height: 38px;
+		padding: 18px;
+		position: relative;
+		a {
+		@include link();
+		&.mailTo {
+			position: absolute;
+			right: 18px;
+			top: 18px;
+			background-position: center top;
+			&:hover{
+				background-position: center bottom;
+			}
+		}
+	}
+	}
+
+}
+h1 {
+	font-size: 30px;
+	color: #fff;
+	display: inline-block;
+	line-height: 37px;
+	vertical-align: top;
+	margin-left: 5px;
+}
+.content {
+	width: 950px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+ul.worklist {
+	> li {
+		float: left;
+		margin: 35px 25px 0 0;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+		> a {
+			display: block;
+			width: 300px;
+			height: 362px;
+			position: relative;
+			color: #ffd73f;
+		}
+		section {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 300px;
+			height: 212px;
+			padding-top: 150px;
+			background-color: rgba(0,0,0,0.75);
+			display: none;
+			text-align: center;
+			h3 {
+				font-size: 24px;
+				line-height: 36px;
+				font-family: \5FAE\8EDF\6B63\9ED1\9AD4, Arial;
+			}
+			span {
+				font-size: 15px;
+				line-height: 18px;
+				font-family: 'Lato', sans-serif;
+			}
+			> img:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}
+a.gotoTop {
+	@include link();
+	background-position: right top;
+	margin: 20px 0;
+	&:hover {
+		background-position: right bottom;
+	}
+}
+a.older {
+	font-size: 20px;
+	color: #adadad;
+	display: block;
+	padding: 7px 30px 7px 12px;
+	position: absolute;
+	bottom: 25px;
+	right: 0;
+	background: #fff url(#{$img}icon_older.png) 65px top no-repeat;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-decoration: none;
+	&:hover {
+		color: #7f7f7f;
+		border-color: #cdcdcd;
+		background-position: 65px bottom;
+	}
+	&.view {
+		background-position: 94px top;
+		&:hover {
+			background-position: 94px bottom;
+		}
+	}
+	&.demo {
+		right: 128px;
+		background-position: 110px top;
+		&:hover {
+			background-position: 110px bottom;
+		}
+	}
+}
+.footer {
+	height: 64px;
+	padding-top: 16px;
+	background-color: #fff;
+	color: #717171;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'sans-serif', Arial;
+}
+.worksPage {
+	h1 {
+		font-family: \5FAE\8EDF\6B63\9ED1\9AD4, Arial;
+		font-size: 27px;
+		margin-left: 70px;
+		&:before {
+		content: "";
+		display: block;
+		width: 74px;
+		height: 74px;
+		background: #ffd73f url(#{$img}icon_unit.png) center no-repeat;
+		position: absolute;
+		top: 0;
+		left: 0;
+		}
+	}
+	a[href="index.html"] {
+		position: absolute;
+		right: 18px;
+		top: 18px;
+	}
+	
+}
+ul.piclist {
+	width: 100%;
+	> li {
+		margin-top: 30px;
+	}
+}
